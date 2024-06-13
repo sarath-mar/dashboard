@@ -1,0 +1,79 @@
+.rounded-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid;
+  position: relative;
+}
+.rounded-icon i {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.trending-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.recharts-cartesian-axis-ticks {
+  display: none;
+}
+.recharts-xAxis {
+  display: none;
+}
+.recharts-layer .recharts-pie-label-line,
+.recharts-layer .recharts-pie-label-text {
+  display: none;
+}
+hr {
+  opacity: 0.1;
+}
+.hot-menus {
+  flex: 1;
+}
+.order-list {
+  flex: 3;
+}
+.middle-section-items {
+  /* min-height: 0px; */
+  max-height: 400px;
+  overflow-y: scroll;
+  position: relative;
+}
+::-webkit-scrollbar {
+  /* display: none; */
+  scroll-behavior: smooth;
+  scrollbar-width: 2px;
+}
+.checked {
+  color: orange;
+}
+.star-icon {
+  font-size: 10px;
+}
+.table-auto {
+  width: 100%;
+}
+thead tr th {
+  text-align: left;
+}
+.header-sticky {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+.dashboard {
+  min-height: 100vh;
+}
+@media (max-width: 1024px) {
+  .middle-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .md-d-none {
+    display: none;
+  }
+}
